@@ -28,3 +28,7 @@ Route::get('products/{id}', function ($id) {
 Route::get('customers/{id?}', function ($id = 1) {
     return "Customer $id";
 });
+
+Route::get('customers/{id}/sales/{idSales}', function ($id, $idSales) {
+    return "The Customer $id had the sale $idSales";
+});
