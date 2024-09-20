@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('products', function () {
     return 'Products Catalog';
 });
+
+Route::get('products/{id}', function ($id) {
+    return "Details of the Product $id";
+});
