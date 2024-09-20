@@ -29,6 +29,9 @@ Route::get('customers/{id?}', function ($id = 1) {
     return "Customer $id";
 });
 
-Route::get('customers/{id}/sales/{idSales}', function ($id, $idSales) {
+Route::get('customers/{id}/sales/{idSales?}', function ($id, $idSales = null) {
+    if ($idSales === null) {
+        return "The Customer $id has no sales";
+    }
     return "The Customer $id had the sale $idSales";
 });
