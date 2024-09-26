@@ -14,7 +14,7 @@ class ProductController extends Controller
 
     public function show($name)
     {
-        return "Details of the Product $name";
+        return "Controller Details of the Product $name";
     }
 
 }
