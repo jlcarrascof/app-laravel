@@ -13,7 +13,7 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        //
+        return "Controller Customer Index";
     }
 
     /**
@@ -23,7 +23,7 @@ class CustomerController extends Controller
      */
     public function create()
     {
-        //
+        return "Controller Customer Create";
     }
 
     /**
@@ -45,7 +45,7 @@ class CustomerController extends Controller
      */
     public function show($id)
     {
-        //
+        return "Controller Customer Show $id";
     }
 
     /**
