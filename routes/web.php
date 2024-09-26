@@ -20,7 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('products', [ProductController::class, 'index']);
-Route::get('user', [UserController::class, 'index']);
+Route::get('users', [UserController::class, 'index']);
 
 Route::get('products/{id}', [ProductController::class, 'show']);
 
