@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,21 +20,9 @@ Route::get('/', function () {
     return '<h1>Hello World</h1>';
 });
 
-Route::get('products', function () {
-    return 'Products Catalog';
-});
+Route::get('products', [ProductController::class, 'index']);
+Route::get('products/{id}', [ProductController::class, 'show']);
 
-Route::get('products/{id}', function ($id) {
-    return "Details of the Product $id";
-});
+Route::get('users', [UserController::class, 'index']);
 
-Route::get('customers/{id?}', function ($id = 1) {
-    return "Customer $id";
-});
-
-Route::get('customers/{id}/sales/{idSales?}', function ($id, $idSales = null) {
-    if ($idSales === null) {
-        return "The Customer $id has no sales";
-    }
-    return "The Customer $id had the sale $idSales";
-});
+Route::resource('customers', CustomerController::class);
