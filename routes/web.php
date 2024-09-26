@@ -23,14 +23,3 @@ Route::get('products', [ProductController::class, 'index']);
 Route::get('users', [UserController::class, 'index']);
 
 Route::get('products/{id}', [ProductController::class, 'show']);
-
-Route::get('customers/{id?}', function ($id = 1) {
-    return "Customer $id";
-});
-
-Route::get('customers/{id}/sales/{idSales?}', function ($id, $idSales = null) {
-    if ($idSales === null) {
-        return "The Customer $id has no sales";
-    }
-    return "The Customer $id had the sale $idSales";
-});
