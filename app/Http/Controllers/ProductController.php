@@ -12,4 +12,9 @@ class ProductController extends Controller
         return "Controller Product Catalog";
     }
 
+    public function show($name)
+    {
+        return "Details of the Product $name";
+    }
+
 }
