@@ -45,7 +45,7 @@ class CustomerController extends Controller
      */
     public function show($id)
     {
-        return "Controller Customer Show $id";
+        return "Controller Customer $id";
     }
 
     /**
@@ -56,7 +56,7 @@ class CustomerController extends Controller
      */
     public function edit($id)
     {
-        //
+        return "Controller Customer Edit $id";
     }
 
     /**
