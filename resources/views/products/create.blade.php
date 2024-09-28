@@ -11,6 +11,7 @@
     <main>
         <div class="container py-4">
 
+            @yield('content')
             <footer class="pt-3 mt-4 text-muted border-top">
                 Laravel Senior Developer Test
             </footer>
