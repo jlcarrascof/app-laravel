@@ -20,7 +20,9 @@ Route::get('/', function () {
     return '<h1>Hello World</h1>';
 });
 
-Route::get('products', [ProductController::class, 'index']);
+Route::get('products', function() {
+    return view('products.index');
+});
 Route::get('products/{id}', [ProductController::class, 'show']);
 
 Route::get('users', [UserController::class, 'index']);
