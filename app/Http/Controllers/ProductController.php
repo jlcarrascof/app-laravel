@@ -17,4 +17,9 @@ class ProductController extends Controller
         return view('products.show', ['product' => $name]);
     }
 
+    public function create()
+    {
+        return view('products.create');
+    }
+
 }
