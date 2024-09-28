@@ -6,6 +6,6 @@
     <title>Products Catalog</title>
 </head>
 <body>
-
+    <h1>Products Catalog</h1>
 </body>
 </html>
