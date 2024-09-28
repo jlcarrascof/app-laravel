@@ -6,6 +6,6 @@
     <title>Product Details</title>
 </head>
 <body>
-    <h1>Product Details <?php echo $product; ?></h1>
+    <h1>Product Details {{ $product }}</h1>
 </body>
 </html>
