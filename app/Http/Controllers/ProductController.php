@@ -25,7 +25,10 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-        print_r($request->all());
+        echo "<pre>";
+        echo $request->input('name')."\n";
+        echo $request->input('price');
+        echo "</pre>";
     }
 
 }
