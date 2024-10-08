@@ -4,7 +4,9 @@
 
 @section('content')
 
-<form action="{{ url('/products/.$id') }}" method="POST">
+<h2>Edit Product</h2>
+
+<form action="{{ url('/products/'.$id) }}" method="POST">
     @method('PUT')
     @csrf
     <div class="mb-3">

@@ -31,4 +31,18 @@ class ProductController extends Controller
         echo "</pre>";
     }
 
+    public function edit($id)
+    {
+        return view('products.edit', ['id' => $id]);
+    }
+
+    public function update(Request $request, $id)
+    {
+        echo "<pre>";
+        echo $id."\n";
+        echo $request->input('name')."\n";
+        echo $request->input('price');
+        echo "</pre>";
+    }
+
 }
