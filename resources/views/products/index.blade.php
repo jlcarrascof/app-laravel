@@ -7,5 +7,13 @@
 </head>
 <body>
     <h1>Products Catalog</h1>
+
+    <form action="{{ url('/products/'.$id) }}" method="POST">
+        @method('DELETE')
+        @csrf
+
+        <button type="submit" class="btn btn-danger">Delete</button>
+
+    </form>
 </body>
 </html>
