@@ -1,10 +1,13 @@
 @extends('layout/template')
 
-@section('title', 'New Product')
+@section('title', 'Edit Product')
 
 @section('content')
 
-<form action="{{ url('/products') }}" method="POST">
+<h2>Edit Product</h2>
+
+<form action="{{ url('/products/'.$id) }}" method="POST">
+    @method('PUT')
     @csrf
     <div class="mb-3">
         <label for="name" class="form-label">Name</label>
