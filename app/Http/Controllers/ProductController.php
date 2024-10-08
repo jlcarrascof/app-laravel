@@ -10,7 +10,7 @@ class ProductController extends Controller
 
     public function index()
     {
-        return view('products.index');
+        return view('products.index', ['id' => 5]);
     }
 
     public function show($name)
@@ -42,6 +42,13 @@ class ProductController extends Controller
         echo $id."\n";
         echo $request->input('name')."\n";
         echo $request->input('price');
+        echo "</pre>";
+    }
+
+    public function destroy($id)
+    {
+        echo "<pre>";
+        echo "Record ".$id." deleted";
         echo "</pre>";
     }
 
