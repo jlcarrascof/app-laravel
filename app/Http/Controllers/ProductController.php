@@ -14,7 +14,7 @@ class ProductController extends Controller
 
         $products = DB::select('SELECT * FROM products WHERE active = 1');
 
-        return view('products.index', ['id' => 5]);
+        return view('products.index', ['myList' => $products]);
     }
 
     public function show($name)
