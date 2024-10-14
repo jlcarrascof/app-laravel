@@ -9,12 +9,42 @@
 <body>
     <h1>Products Catalog</h1>
 
-    <form action="{{ url('/products/'.$id) }}" method="POST">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Code</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach ($myList as $item)
+                <tr>
+                    <td>{{ $item->id }}</td>
+                    <td>{{ $item->code }}</td>
+                    <td>{{ $item->description }}</td>
+                    <td>{{ $item->price }}</td>
+                    <td>{{ $item->exist }}</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+           @endforeach
+        </tbody>
+    </table>
+
+
+    <!--
+    <form action="" method="POST">
         @method('DELETE')
         @csrf
 
         <button type="submit" class="btn btn-danger">Delete</button>
 
-    </form>
+    </form>-->
 </body>
 </html>

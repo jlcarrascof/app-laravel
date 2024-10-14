@@ -4,13 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
 
     public function index()
     {
-        return view('products.index', ['id' => 5]);
+
+        $products = DB::select('SELECT * FROM products WHERE active = 1');
+
+        return view('products.index', ['myList' => $products]);
     }
 
     public function show($name)
