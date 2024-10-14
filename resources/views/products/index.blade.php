@@ -13,9 +13,12 @@
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Name</th>
+                <th>Code</th>
+                <th>Description</th>
                 <th>Price</th>
-                <th>Actions</th>
+                <th>Stock</th>
+                <th></th>
+                <th></th>
             </tr>
         </thead>
     </table>
