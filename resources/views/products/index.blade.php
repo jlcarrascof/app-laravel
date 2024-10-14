@@ -8,6 +8,19 @@
 </head>
 <body>
     <h1>Products Catalog</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+    </table>
+
+
     <!--
     <form action="" method="POST">
         @method('DELETE')
