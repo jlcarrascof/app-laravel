@@ -9,7 +9,7 @@
 <body>
     <h1>Products Catalog</h1>
     <!--
-    <form action="{{ url('/products/'.$id) }}" method="POST">
+    <form action="" method="POST">
         @method('DELETE')
         @csrf
 
