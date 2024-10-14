@@ -29,7 +29,7 @@
                     <td>{{ $item->code }}</td>
                     <td>{{ $item->description }}</td>
                     <td>{{ $item->price }}</td>
-                    <td>{{ $item->stock }}</td>
+                    <td>{{ $item->exist }}</td>
                     <td></td>
                     <td></td>
                 </tr>
