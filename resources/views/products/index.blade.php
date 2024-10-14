@@ -21,6 +21,20 @@
                 <th></th>
             </tr>
         </thead>
+
+        <tbody>
+            @foreach ($myList as $item)
+                <tr>
+                    <td>{{ $item->id }}</td>
+                    <td>{{ $item->code }}</td>
+                    <td>{{ $item->description }}</td>
+                    <td>{{ $item->price }}</td>
+                    <td>{{ $item->stock }}</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+           @endforeach
+        </tbody>
     </table>
 
 
